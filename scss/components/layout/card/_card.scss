@@ -1,0 +1,12 @@
+@use '../../../abstracts' as *;
+
+.card {
+  box-shadow: $shadow-sm;
+  border-radius: toRem(24);
+  overflow: hidden;
+
+  &__label {
+    background-color: white;
+    padding: fluid-value(14, 16) fluid-value(32, 56);
+  }
+}

@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+h1 {
+  @include fluid-full(font-size, 32, 49);
+  font-weight: 900;
+  line-height: calc(1em + 8px);
+  color: $heading-100;
+  @include fluid-full(margin-bottom, 16, 20);
+}
+
+h2 {
+  @include fluid-full(font-size, 28, 40);
+  font-weight: 800;
+  line-height: calc(1em + 8px);
+  color: $heading-100;
+  @include fluid-full(margin-bottom, 16, 20);
+}
+
+h4 {
+  @include fluid-full(font-size, 18, 16);
+  font-weight: 500;
+  line-height: calc(1em + 8px);
+  color: $heading-100;
+  @include fluid-full(margin-bottom, 12, 16);
+}
+
+.body-lg {
+  @include fluid-full(font-size, 17, 21);
+}

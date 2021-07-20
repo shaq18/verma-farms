@@ -1,0 +1,19 @@
+.self {
+  &-center {
+    align-self: center;
+  }
+}
+
+.justify-self {
+  &-start {
+    justify-self: start;
+  }
+
+  &-center {
+    justify-self: center;
+  }
+
+  &-end {
+    justify-self: end;
+  }
+}

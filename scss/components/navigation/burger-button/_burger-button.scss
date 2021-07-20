@@ -1,0 +1,48 @@
+@use '../../../abstracts' as *;
+
+.burger-button {
+  transition: transform 0.5s ease-out;
+  position: relative;
+  width: toRem(24);
+
+  &.active {
+    transform: rotate(135deg);
+
+    .burger-button {
+      &__bar {
+        &:nth-child(1) {
+          transform: translateY(0) rotate(90deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  &__bar {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $dark-brown;
+
+    &:nth-child(1) {
+      transform: translateY(-8px);
+      transition: transform 0.5s ease-out;
+    }
+
+    &:nth-child(2) {
+      transition: transform 0.5s ease-out;
+    }
+
+    &:nth-child(3) {
+      transform: translateY(8px);
+      transition: transform 0.5s ease-out;
+    }
+  }
+}

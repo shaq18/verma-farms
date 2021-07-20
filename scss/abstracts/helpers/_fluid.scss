@@ -1,0 +1,18 @@
+@mixin fluid-full($property, $min-size, $max-size, $min-width: 375, $max-width: 1440) {
+  #{$property}: calc(
+    #{$min-size}px + (#{$max-size} - #{$min-size}) *
+      ((100vw - #{$min-width}px) / (#{$max-width} - #{$min-width}))
+  );
+
+  @media (min-width: #{$max-width + 1}px) {
+    #{$property}: #{$max-size}px;
+  }
+}
+
+@function fluid-value($min-size, $max-size, $min-width: 375, $max-width: 1440) {
+  $calcValue: calc(
+    #{$min-size}px + (#{$max-size} - #{$min-size}) *
+      ((100vw - #{$min-width}px) / (#{$max-width} - #{$min-width}))
+  );
+  @return $calcValue;
+}
