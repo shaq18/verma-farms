@@ -1,0 +1,15 @@
+@use '../../abstracts' as *;
+
+.gap-x {
+  &-standard {
+    @include fluid-full(grid-column-gap, 32, 64);
+  }
+}
+
+.t_sm {
+  &\:gap-x {
+    &-standard {
+      @include fluid-full(grid-column-gap, 32, 64);
+    }
+  }
+}

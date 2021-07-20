@@ -1,0 +1,10 @@
+@use '../../abstracts' as *;
+
+.grid-cols {
+  &-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@include mq($t_sm) {
+}
