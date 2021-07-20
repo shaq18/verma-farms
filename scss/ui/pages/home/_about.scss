@@ -1,0 +1,152 @@
+@use '../../../abstracts' as *;
+
+.about {
+  background-color: $peach-400;
+  padding-top: fluid-value(32, 40, 375, 1280);
+
+  &__badge {
+    @include fluid-full(height, 48, 60);
+    @include fluid-full(margin-bottom, 16, 32);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__heading-2 {
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    max-width: 37ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__grid {
+    @include fluid-full(grid-row-gap, 40, 56);
+  }
+
+  &__image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: toRem(32);
+    padding-bottom: toRem(32);
+    margin-top: fluid-value(24, 32, 375, 1023);
+    @include fluid-full(max-width, 400, 560);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+
+  &__image-divider {
+    width: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: $dark-brown;
+    z-index: 2;
+    border-radius: 999px;
+  }
+
+  &__image-gummy {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  }
+
+  &__image-weed {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+  }
+
+  &__image-bowl {
+    width: 100%;
+    height: auto;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__desc-heading {
+    width: 100%;
+    text-align: center;
+    @include fluid-full(margin-top, 16, 24);
+
+    &::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      @include fluid-full(margin-top, 8, 16);
+      border-radius: 999px;
+      background-color: $primary;
+    }
+  }
+
+  &__ingredients-icon {
+    @include fluid-full(height, 72, 96);
+    display: block;
+  }
+
+  &__thc-icon {
+    @include fluid-full(height, 40, 56);
+    display: block;
+  }
+
+  &__benefits-icon {
+    @include fluid-full(height, 56, 72);
+    display: block;
+  }
+
+  &__plants-icon {
+    @include fluid-full(height, 64, 80);
+    display: block;
+  }
+
+  &__desc-text {
+    text-align: center;
+  }
+
+  &__wave {
+    path {
+      fill: $peach-300;
+    }
+  }
+
+  @include mq($t_sm) {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__image-container {
+      grid-column: 1/-1;
+    }
+  }
+
+  @include mq($t_lg) {
+    &__grid {
+      grid-template-columns: 1fr 1.5fr 1fr;
+      @include fluid-full(margin-top, 56, 64);
+    }
+
+    &__image-container {
+      margin-top: 0;
+      margin-bottom: 0;
+      grid-row: 1/3;
+      grid-column: 2/3;
+      align-self: center;
+    }
+  }
+}
