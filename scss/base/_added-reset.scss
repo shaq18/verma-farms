@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  overflow-x: hidden;
+  color: $text-200;
+  font-style: normal;
+  @include fluid-full(font-size, 15, 18);
+  font-weight: 300;
+  line-height: calc(1em + 8px);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
