@@ -1,0 +1,30 @@
+@use '../../../abstracts' as *;
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: toRem(36);
+  padding-right: toRem(36);
+
+  @include mq($m_lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include mq($t_sm) {
+    max-width: initial;
+    padding-left: toRem(56);
+    padding-right: toRem(56);
+  }
+
+  @include mq($t_lg) {
+    max-width: 1260px;
+  }
+
+  @include mq($d_md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

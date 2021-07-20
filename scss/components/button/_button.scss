@@ -1,0 +1,35 @@
+@use '../../abstracts' as *;
+
+.button {
+  width: 100%;
+  padding: toRem(16) fluid-value(48, 64);
+  @include fluid-full(border-radius, 6, 8);
+  @include fluid-full(font-size, 16, 14);
+
+  @include mq($m_lg) {
+    width: auto;
+  }
+
+  @include mq($d_sm) {
+    padding: toRem(16) toRem(64);
+  }
+
+  &.button {
+    &--primary {
+      &.button {
+        &--solid {
+          background-color: $primary;
+          color: white;
+        }
+      }
+    }
+
+    &--base-margin {
+      @include fluid-full(margin-top, 24, 32);
+    }
+
+    &--with-shadow {
+      box-shadow: $shadow-button;
+    }
+  }
+}

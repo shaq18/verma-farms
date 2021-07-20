@@ -1,0 +1,11 @@
+@use '../../abstracts' as *;
+
+.wave {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 32px;
+
+  @include mq($t_sm) {
+    margin-top: 0;
+  }
+}
