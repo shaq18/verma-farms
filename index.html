@@ -1,12 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://use.typekit.net/hkl7hkl.css" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/hkl7hkl.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.12/lottie.min.js"
+      integrity="sha512-Dr2QERtNqLw0I06FR7G73CjiWvR4roRMDNTbOGp+qeGhVjEl0xs4AKZzqVFREqdOL3t8ei7H9y9XUcpYVkwEIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./scripts/index.js" type="module"></script>
     <title>Verma Farms</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__menu">
+          <button class="burger-button justify-self-start">
+            <div class="burger-button__bar"></div>
+            <div class="burger-button__bar"></div>
+            <div class="burger-button__bar"></div>
+          </button>
+
+          <div class="header__menu-drawer">
+            <a href="javascript:void(0)" class="header__link"> Shop </a>
+            <a href="javascript:void(0)" class="header__link"> Our Story </a>
+            <a href="javascript:void(0)" class="header__link"> Learn </a>
+            <a href="javascript:void(0)" class="header__link"> Community </a>
+            <a href="javascript:void(0)" class="header__link"> Blog </a>
+          </div>
+
+          <a href="javascript:void(0)" class="header__link justify-self-center">
+            <img src="./assets/brand/logo.svg" alt="" class="logo" />
+          </a>
+
+          <a href="javascript:void(0)" class="header__link header__link--cart justify-self-end">
+            <img src="/assets/icons/cart.svg" alt="" class="header__cart-icon" />
+            <p class="header__cart-item-number">1</p>
+          </a>
+        </div>
+
+        <div class="header__menu header__menu--desktop">
+          <a href="javascript:void(0)" class="header__link">
+            <img src="./assets/brand/logo.svg" alt="" class="logo" />
+          </a>
+          <a href="javascript:void(0)" class="header__link"> Shop </a>
+          <a href="javascript:void(0)" class="header__link"> Our Story </a>
+          <a href="javascript:void(0)" class="header__link"> Learn </a>
+          <a href="javascript:void(0)" class="header__link ml-auto"> Community </a>
+          <a href="javascript:void(0)" class="header__link"> Blog </a>
+          <a href="javascript:void(0)" class="header__link header__link--cart">
+            <img src="/assets/icons/cart.svg" alt="" class="header__cart-icon" />
+            <p class="header__cart-item-number">1</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="header-offset"></div>
+
+    <section class="section hero">
+      <div class="container hero__container">
+        <div class="hero__grid grid t_sm:gap-x-standard">
+          <div class="hero__grid-item">
+            <h1 class="hero__heading-1">Pure All Natural CBD Inspired by the Islands of Hawaii</h1>
+            <p class="hero__text body-lg">ZERO THC - all natural cannabidoil</p>
+            <button
+              class="button button--primary button--solid button--base-margin button--with-shadow"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <div class="hero__grid-item">
+            <img
+              src="/assets/images/home/product-image.png"
+              alt="Product Image"
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="wave hero__wave"></div>
+    </section>
+
+    <section class="section benefits">
+      <div class="container">
+        <div>
+          <h2 class="benefits__heading-2">Verma’s Benefits</h2>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus auctor arcu, nec
+            mollis tortor.
+          </p>
+        </div>
+        <div class="benefits__grid grid t_sm:gap-x-standard">
+          <div class="card benefits__card">
+            <img src="/assets/images/benefits/quiet.jpg" alt="" class="benefits__card-image" />
+            <div class="card__label benefits__card-label">
+              <p class="benefits__card-text body-large">Quiet your mind and calm the storm.</p>
+            </div>
+          </div>
+
+          <div class="card benefits__card">
+            <img src="/assets/images/benefits/ease.jpg" alt="" class="benefits__card-image" />
+            <div class="card__label benefits__card-label">
+              <p class="benefits__card-text body-large">Ease your pain and soothe your joints.</p>
+            </div>
+          </div>
+
+          <div class="card benefits__card">
+            <img src="/assets/images/benefits/sleep.jpg" alt="" class="benefits__card-image" />
+            <div class="card__label benefits__card-label">
+              <p class="benefits__card-text body-large">Sleep tight and wake up refreshed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave benefits__wave"></div>
+    </section>
+
+    <section class="section about">
+      <div class="container">
+        <div>
+          <img src="/assets/images/about/round-logo-orange.png" alt="" class="about__badge" />
+          <h2 class="benefits__heading-2">About Our CBD</h2>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus auctor arcu, nec
+            mollis tortor. Quisque scelerisque fermentum bibendum.
+          </p>
+        </div>
+        <div class="about__grid grid t_sm:gap-x-standard">
+          <div class="about__image-container">
+            <img
+              src="/assets/images/about/weed-bowl-placeholder.png"
+              alt=""
+              class="about__image-weed"
+            />
+            <img src="/assets/images/about/gummies-bowl.png" alt="" class="about__image-gummy" />
+            <img src="/assets/images/about/white-bowl.png" alt="" class="about__image-bowl" />
+            <div class="about__image-divider"></div>
+          </div>
+
+          <div class="about__desc">
+            <img
+              src="/assets/images/about/ingredients-icon.png"
+              alt=""
+              class="about__ingredients-icon"
+            />
+            <h4 class="about__desc-heading">High Quality Ingredients</h4>
+            <p class="about__desc-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus auctor arcu,
+              nec mollis tortor.
+            </p>
+          </div>
+
+          <div class="about__desc">
+            <img src="/assets/images/about/thc-icon.png" alt="" class="about__thc-icon" />
+            <h4 class="about__desc-heading">THC</h4>
+            <p class="about__desc-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus auctor arcu,
+              nec mollis tortor.
+            </p>
+          </div>
+
+          <div class="about__desc">
+            <img src="/assets/images/about/benefit-icon.png" alt="" class="about__benefits-icon" />
+            <h4 class="about__desc-heading">xyz Benefit</h4>
+            <p class="about__desc-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus auctor arcu,
+              nec mollis tortor.
+            </p>
+          </div>
+
+          <div class="about__desc">
+            <img src="/assets/images/about/plants-icon.png" alt="" class="about__plants-icon" />
+            <h4 class="about__desc-heading">From Plants… to Gummies</h4>
+            <p class="about__desc-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus auctor arcu,
+              nec mollis tortor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave about__wave"></div>
+    </section>
+  </body>
 </html>
